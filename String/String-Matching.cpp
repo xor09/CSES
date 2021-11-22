@@ -24,10 +24,10 @@ ull binaryExponential(ull x, ull n){
 }
  
 int hashing(string &s, string &t){
+
    int tlen = t.size(), slen = s.size();
- 
    ull sHash=0, tHash=0, count=0;
-   vector<int> ans;
+   
    for(int i=0; i<tlen; ++i){
       char ch = t[i];
       tHash = (tHash*131 + ch)%MOD;
