@@ -29,7 +29,6 @@ int solve(vector<int> &arr, int n, int target){
 int32_t main(){
     fastio;
     ll t=1;
-    //cin>>t;
     while(t--){
       int n,x;
       cin>>n>>x;
