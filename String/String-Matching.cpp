@@ -4,7 +4,7 @@
 #define ull unsigned long long
 #define endl "\n"
 #define INF (long long)1e15
-#define debug(x) cout<<#x<<"-->"<<x<<endl
+#define debug(x) cout<<#x<<" --> "<<x<<endl
 #define print(x) cout<<x<<endl
 #define printc(x) cout<<x<<" "
 #define foreach(arr) for(auto &e : arr) cout<<e<<" "
@@ -27,7 +27,7 @@ int hashing(string &s, string &t){
 
    int tlen = t.size(), slen = s.size();
    ull sHash=0, tHash=0, count=0;
-   
+
    for(int i=0; i<tlen; ++i){
       char ch = t[i];
       tHash = (tHash*131 + ch)%MOD;
